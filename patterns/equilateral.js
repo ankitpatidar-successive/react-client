@@ -7,8 +7,8 @@ for (let i = 1; i <= n; i++) {
     string += " ";
   }
   // printing star
-  for (let k = 0; k < 2 * i - 1; k++) {
-    string += "*";
+  for (let k = 0; k <  i; k++) {
+    string += "* ";
   }
   string += "\n";
 }
