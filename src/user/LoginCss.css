@@ -1,0 +1,17 @@
+.main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: '100px';
+    padding: 40px 0 40px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #e1e3eb;
+}
+.sub-main{
+    font-size: large;
+    font: bold;
+}
+.buttonCss{
+    background-color: lime;
+}
