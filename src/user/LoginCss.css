@@ -15,3 +15,13 @@
 .buttonCss{
     background-color: lime;
 }
+.heading{
+    padding-right: 50%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+    font-style:oblique;
+    color:navy;
+}
