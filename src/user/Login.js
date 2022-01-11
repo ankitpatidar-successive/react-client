@@ -2,18 +2,18 @@ import React from 'react';
 import './LoginCss.css'
 import { TextField,Button,Form,FormLayout} from '@shopify/polaris';
 import { useState } from 'react';
-  const  Login = () => {
+/*  const  Login = () => {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const emailValidation = () => {
-    var emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(email.match(emailregex)){
         return true;
     }
     return false;
 }
 const passwordValidation = () => {
-  var passwordregex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+  const passwordregex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
   if(password.match(passwordregex)){
     return true;
   }
@@ -61,8 +61,8 @@ const passwordValidation = () => {
 }
 export default Login;
 
-/*
-This is Class component
+
+This is Class component*/
 class Login extends React.Component {
   constructor(props){
     super(props);
@@ -79,18 +79,18 @@ class Login extends React.Component {
   }
   render(){
   return( 
-    <div className = "form">
+    <div className = "main">
     <h1 className = "heading">Welcome to my Login Page</h1>
       <Form onSubmit = {this.onSubmitt}> 
           <FormLayout>
-            <div className = "textfield">
+            <div className = "sub-main">
      <TextField label="Email" autoComplete="off" align="left" type="email" value= {this.state.email}
       onChange = {(newValue) => this.setState({email:newValue})} />
             <br/>
             <TextField label="Password" autoComplete="off" align="left" type="password" value = {this.state.password}
      onChange = {(newValue) => this.setState({password:newValue})} />
       </div>
-      <div className="submit">
+      <div className="buttonCss">
             <Button submit >Submit</Button>
             </div>
             </FormLayout>
@@ -99,4 +99,5 @@ class Login extends React.Component {
   );
   }
 }
-*/
+export default Login;
+
