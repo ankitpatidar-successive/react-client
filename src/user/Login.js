@@ -2,7 +2,8 @@ import React from 'react';
 import './LoginCss.css'
 import { TextField,Button,Form,FormLayout} from '@shopify/polaris';
 import { useState } from 'react';
-/*  const  Login = () => {
+/* Function component  
+const  Login = () => {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const emailValidation = () => {
