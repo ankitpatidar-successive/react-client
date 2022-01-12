@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+import React from "react";
+import enTranslations from '@shopify/polaris/locales/en.json';
+import {AppProvider} from '@shopify/polaris';
+import Login from './user/Login';
+ const App = () =>{
+   return(
+     <div>
+       <AppProvider className="sub-main" i18n={enTranslations}>
+       <Login/>
+       </AppProvider>
+     </div>
+   );
+ }
+ export default App;
