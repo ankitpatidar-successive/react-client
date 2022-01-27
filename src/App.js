@@ -1,7 +1,7 @@
 import React from "react";
 import enTranslations from '@shopify/polaris/locales/en.json';
 import { AppProvider } from '@shopify/polaris';
-import Routers from "./route/router";
+import Routers from "./route/Router";
 const App = () => {
   return (
     <div>

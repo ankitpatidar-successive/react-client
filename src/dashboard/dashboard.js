@@ -4,7 +4,7 @@ import Admin from '../user/role/Admin';
 import User from '../user/role/User';
 import Trainee from '../user/role/Trainee';
 import { useState } from 'react';
-import TopBarExample from "../header/Header";
+import TopBarExample from "../header/header";
 
 const Dashboard = () => {
 	const [adminn, setAdminn] = useState(false);

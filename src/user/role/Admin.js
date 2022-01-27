@@ -1,10 +1,10 @@
 import { Card, ResourceList, ResourceItem, TextStyle, Button, Avatar } from "@shopify/polaris";
 import React, { useCallback, useState } from "react";
 import '../../App.css'
-import books from "../../data/book/Book";
-import Delete from "../components/Delete";
-import Edit from "../components/Edit";
-import Add from "../components/Add";
+import books from "../../data/book/book";
+import Delete from "../components/delete";
+import Edit from "../components/edit";
+import Add from "../components/add";
 
 const Admin = () => {
   const resourceName = {

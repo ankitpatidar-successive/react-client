@@ -13,11 +13,11 @@ const Login = () => {
     const [passwordError, setPasswordError] = useState('');
     const [role, setRole] = useState("");
     const emailValidation = () => {
-        let REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(email === "") {
           setEmailError("email is required")
         }
-        else if(email.match(REGEX)){
+        else if(email.match(emailRegex)){
           setEmailError("")
         }
         else {
@@ -33,8 +33,8 @@ const Login = () => {
         }
       }
      const passwordValidation = () => {
-         let REGEX = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$";
-         if(password.match(REGEX)) {
+         let passwordRegex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$";
+         if(password.match(passwordRegex)) {
            return true;
          }
          else {

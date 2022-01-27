@@ -2,8 +2,8 @@
 import {  Card, ResourceList ,ResourceItem,TextStyle, Button, Modal, Avatar} from "@shopify/polaris";
 import React ,{ useCallback, useState } from "react";
 import '../../App.css'
-import books from "../../data/book/Book";
-import Add from "../components/Add";
+import books from "../../data/book/book";
+import Add from "../components/add";
 const User = () =>{
   const resourceName = {
     singular: "book",
