@@ -12,8 +12,8 @@ const Dashboard = () => {
 	const [trainee, setTrainee] = useState(false);
 	return (
 		<div>
-            <h1>Welcome to Dashboard</h1>
-            <TopBarExample/>
+			<h1>Welcome to Dashboard</h1>
+			<TopBarExample />
 			<button onClick={() => { setAdminn(true); setUserrs(false); setTrainee(false) }} >Admin</button>&nbsp;&nbsp;&nbsp;&nbsp;
 			<button onClick={() => { setAdminn(false); setUserrs(true); setTrainee(false) }} >User</button>&nbsp;&nbsp;&nbsp;&nbsp;
 			<button onClick={() => { setAdminn(false); setUserrs(false); setTrainee(true) }} >Trainee</button>

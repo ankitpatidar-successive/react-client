@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { TopBar } from '@shopify/polaris';
 import { useNavigate } from 'react-router';
 
-export default function TopBarExample() {
+TopBarExample = () => {
   const navigate = useNavigate();
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const toggleIsUserMenuOpen = useCallback(
@@ -12,26 +12,26 @@ export default function TopBarExample() {
   const handleNavigationToggle = useCallback(() => {
     console.log('toggle navigation visibility');
   }, []);
-  const handleadmin= () =>{
+  const handleadmin = () => {
     navigate('/admin');
   }
-  const handletrainee= () =>{
+  const handletrainee = () => {
     navigate('/trainee');
   }
-  const handleuser = () =>{
+  const handleuser = () => {
     navigate('/user');
   }
   const userMenuMarkup = (
     <TopBar.UserMenu
       actions={[
         {
-          items: [{ content: 'Admin',onAction: handleadmin}],
+          items: [{ content: 'Admin', onAction: handleadmin }],
         },
         {
-          items: [{ content: 'User',onAction: handleuser}],
+          items: [{ content: 'User', onAction: handleuser }],
         },
         {
-          items: [{ content: 'Trainee',onAction: handletrainee}],
+          items: [{ content: 'Trainee', onAction: handletrainee }],
         },
       ]}
       initials="AJ"
@@ -52,3 +52,4 @@ export default function TopBarExample() {
     </div>
   );
 }
+export default TopBarExample;
